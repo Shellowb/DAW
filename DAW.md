@@ -198,18 +198,19 @@ se puede comunicar con diferentes bases de
 Se puede acceder a los strings como arreglos.
 todo son arreglos
 
-``` html
-<?php
+```php
+<?
   $arr = array("foo" => "bar", 12 => true);
 ?>
 ```
+
 Si no se le dan valores de índices al arreglo, php les asgina un ídices que es el mayor entero más uno.
 `$_SESSION` guarda las variables de sesion http, diferente a la sesión de log en una página.
 
 ejemplo: le pasamos una variable con get a un script php como por
 `localhost:/...../hola.php?Juan`
 Del lado del servidor
-```html
+```php
 <?
   echo "<p>hola<p>".$_GET[0];
 ?>
@@ -217,7 +218,7 @@ Del lado del servidor
 Si no se valida en el lado del servidor los datos como en este ejmplo se pueden hacer validaciones de usuario.
 porque yo podría ingresar valores imap_mail_como
 `localhost:/...../hola.php?Juan</p><img scr= www.fotofea.cl>`
-```html
+```php
   <p>Hola Juan
   <img scr= www.fotofea.cl>
 ```
@@ -228,7 +229,8 @@ porque yo podría ingresar valores imap_mail_como
 ### Organizmos Reguladores
 ### Code
 Sintaxis
-```html
+
+```php
   <?
     echo "Esto es una prueba"; //comentarios
     //variables

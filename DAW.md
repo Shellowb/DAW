@@ -199,7 +199,7 @@ Se puede acceder a los strings como arreglos.
 todo son arreglos
 
 ```php
-<?
+<?php
   $arr = array("foo" => "bar", 12 => true);
 ?>
 ```
@@ -211,14 +211,14 @@ ejemplo: le pasamos una variable con get a un script php como por
 `localhost:/...../hola.php?Juan`
 Del lado del servidor
 ```php
-<?
+<?php
   echo "<p>hola<p>".$_GET[0];
 ?>
 ```
 Si no se valida en el lado del servidor los datos como en este ejmplo se pueden hacer validaciones de usuario.
 porque yo podría ingresar valores imap_mail_como
 `localhost:/...../hola.php?Juan</p><img scr= www.fotofea.cl>`
-```php
+```html
   <p>Hola Juan
   <img scr= www.fotofea.cl>
 ```
@@ -231,7 +231,7 @@ porque yo podría ingresar valores imap_mail_como
 Sintaxis
 
 ```php
-  <?
+  <?php
     echo "Esto es una prueba"; //comentarios
     //variables
     $un_bool = TRUE; // una valor booleano;

@@ -222,11 +222,14 @@ porque yo podría ingresar valores imap_mail_como
   <p>Hola Juan
   <img scr= www.fotofea.cl>
 ```
+¿Cuando es útil tener variable con nomre de varibles?
+preguntar al profe...
 
 ### Programas Útiles
 ### Commands & Code
 `php -a` PHP se puede usar desde la línea de comandos. Abre una interactive Shell
 Sintaxis
+
 
 ```php
   <?php
@@ -246,11 +249,22 @@ Para usar variable globales usamos `global`
     }
   ?>
 ```
+el modificador `static`
+variables con nombres variables ej:`$$a` <br>
+```php
+  <?php
+  $a = 'hola';
+  $$a = 'mundo';
+  ?>
+```
 Tambien al ser interpretado los valores de las varibales dependen del contexto.
 
 ### Organizmos Reguladores
 
 ### Material extra del Tópico
+se puede accerder a información del cliente con:
+  `$_SERVER = USER_AGENT`
+
 
 
 # Aplicación en General
@@ -263,6 +277,11 @@ si es una página si o si debería ser responsive.
 
 **Vulnerabilidades:**
 Aveces no se procesan ciertos archivos en le lado del servidor, entonces el servidor hacer Directory Listing. Pero con eso nosotros dejamos habilidatos publicamente a cualquiera que se conecte al servidor todos estos directorios.
+
+Nunca podemos controloar lo que nos envía el usuario
+
+Los servidores almancenan información de los "clientes y navegadores que nos están visitando"
+Las injecciones de códgido, son en lenguaje que se procesa en el navegador.
 
 ### Programas Útiles
 > wev.dev

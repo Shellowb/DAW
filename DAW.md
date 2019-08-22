@@ -224,22 +224,31 @@ porque yo podría ingresar valores imap_mail_como
 ```
 
 ### Programas Útiles
-### Commands
+### Commands & Code
 `php -a` PHP se puede usar desde la línea de comandos. Abre una interactive Shell
-### Organizmos Reguladores
-### Code
 Sintaxis
 
 ```php
   <?php
     echo "Esto es una prueba"; //comentarios
     //variables
-    $un_bool = TRUE; // una valor booleano;
+    $un_bool= TRUE; // una valor booleano;
+  ?>
+```
+Para usar variable globales usamos `global`
+```
+  <?php
+    $a = 1;
+    $b = 2;
+    function suma(){
+      global $a, $b;
+      echo $a + $b;
+    }
   ?>
 ```
 Tambien al ser interpretado los valores de las varibales dependen del contexto.
 
-
+### Organizmos Reguladores
 
 ### Material extra del Tópico
 

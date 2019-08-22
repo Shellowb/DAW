@@ -173,6 +173,74 @@ Datofreak: Entre 1500-1600 ingenieros para desarrollar chrome.
 **WebGl:** Aplicaciónes gráficas con soporte en la web.
 Solo necesitas el navegador vs tener que desarrollar para cada framework.
 
+## CGI
+Programas que se ejecutan en el servidor.
+Pueden ser escritos en cualquier lenguaje.
+Acuerdo de programas de como se ejecutan los programas que se ejecutan en el lado del servidor.
+
+### Ejemplos & Consejos
+Ejemplos de lenguaje, pueden ser C (aunque en la practica no se usa). Y ultimamente disponible WebAsembly (programación eficiente).
+
+### Programas Útiles
+### Commands
+### Organizmos Reguladores
+### Code
+### Material extra del Tópico
+
+## PHP
+Permite añadir código al HTML
+Conocido por arquitectura LAMP
+tambie se pueden generar imágenes y PDF en línea.
+se puede comunicar con diferentes bases de
+**Se ejecuta en el lado del servidor** y al cliente solo le llega el resultado en HTML.
+
+### Ejemplos & Consejos
+Se puede acceder a los strings como arreglos.
+todo son arreglos
+
+``` html
+<?php
+  $arr = array("foo" => "bar", 12 => true);
+?>
+```
+Si no se le dan valores de índices al arreglo, php les asgina un ídices que es el mayor entero más uno.
+`$_SESSION` guarda las variables de sesion http, diferente a la sesión de log en una página.
+
+ejemplo: le pasamos una variable con get a un script php como por
+`localhost:/...../hola.php?Juan`
+Del lado del servidor
+```html
+<?
+  echo "<p>hola<p>".$_GET[0];
+?>
+```
+Si no se valida en el lado del servidor los datos como en este ejmplo se pueden hacer validaciones de usuario.
+porque yo podría ingresar valores imap_mail_como
+`localhost:/...../hola.php?Juan</p><img scr= www.fotofea.cl>`
+```html
+  <p>Hola Juan
+  <img scr= www.fotofea.cl>
+```
+
+### Programas Útiles
+### Commands
+`php -a` PHP se puede usar desde la línea de comandos. Abre una interactive Shell
+### Organizmos Reguladores
+### Code
+Sintaxis
+```html
+  <?
+    echo "Esto es una prueba"; //comentarios
+    //variables
+    $un_bool = TRUE; // una valor booleano;
+  ?>
+```
+Tambien al ser interpretado los valores de las varibales dependen del contexto.
+
+
+
+### Material extra del Tópico
+
 
 # Aplicación en General
 
@@ -181,10 +249,17 @@ info
 ### Ejemplos & Consejos
 Hay que tener en consideración el tipo de usuario, los diferentes tipos de usuarios, a la hora de dasarollar la aplicación.
 si es una página si o si debería ser responsive.
+
+**Vulnerabilidades:**
+Aveces no se procesan ciertos archivos en le lado del servidor, entonces el servidor hacer Directory Listing. Pero con eso nosotros dejamos habilidatos publicamente a cualquiera que se conecte al servidor todos estos directorios.
+
 ### Programas Útiles
 > wev.dev
 ### Commands
+`'indef of'site:uchile.cl` lista los archivos y directorios indexados en un servidor, asociados a una dirección
 
 ### Organizmos Reguladores
 ### Code
 ### Material extra del Tópico
+WAI recomendaciones de accesibilidad de la web
+Bot net: es una red de dispositivos conectados, usualmente una applicación maliciosa, para hacer pedidos a tal día a tal hora a cierta dirección. Una botnet es capar de dejar fuera de linea a cualquier empresa.

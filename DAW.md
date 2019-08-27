@@ -293,3 +293,25 @@ Las injecciones de códgido, son en lenguaje que se procesa en el navegador.
 ### Material extra del Tópico
 WAI recomendaciones de accesibilidad de la web
 Bot net: es una red de dispositivos conectados, usualmente una applicación maliciosa, para hacer pedidos a tal día a tal hora a cierta dirección. Una botnet es capar de dejar fuera de linea a cualquier empresa.
+
+
+Format
+## php & DataBases
+
+
+### Ejemplos & Consejos
+La legalidad de lo que hay en internet esta sujeta a la legislación territorial. Ejemplo de material "pedofilico en .ru" <br>
+Nunca guardar archivos según los campos entregados con el cliente. <br>
+Para verficar el tipo (o MIME type) revisar la extensión en el binario del archivo,nunca confiar en el nombre. <br>
+Generar nombres seguros para los archivos en el lado del servidor. <br>
+El tamaño maximo de carga de archivos, default de php es de 10mb.
+También la cantidad máxima de archivos que puedo agregar en un upload.
+
+### Programas Útiles
+### Commands
+`curl`
+### Organizmos Reguladores
+**Sintaxis:** Ansi SQL
+nx-domains.
+### Code
+### Material extra del Tópico
